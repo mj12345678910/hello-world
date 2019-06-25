@@ -5,15 +5,16 @@
 }
 
 #title{
-
+text-align: center;
   font-size: 4em;
-  color: #B89041;
-  font-family: 'Georgia';
+  color: #ffcc33;
+  font-family: 'cutive mono';
   font-weight: bold;
+  display: block;
 }
 
 .halfrow {
-  background-color: #CF969D;
+  background-color: #2d4430;
   color:white;
   margin: 40px;
   padding: 20px;
@@ -32,7 +33,7 @@
   background-color: #574831;
 }
 #color3 {
-  background-color: #8E7C5D;
+  background-color: #0d2d00;
 }
 #color4 {
   background-color: #10100E;
