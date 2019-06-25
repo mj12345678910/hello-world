@@ -13,23 +13,78 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+  function randomColor() {
+    var red= Math.floor(Math.random() * 256);
+    var green= Math.floor(Math.random() * 256);
+    var blue= Math.floor(Math.random() * 256);
+
+
+    var divtoedit = document.getElementById('pickcolor');
+    divtoedit.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
+
+    doucment.getElementById('colorGenerated').innerHTML =  'rgb('+red+','+green+','+blue+')';
+  }
+
+  </script>
+
 </head>
 
-  <body>
+<body>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      about molly
-      </div>
+        <span id="title">About molly </span>
+    </div>
   </div>
 
-      <div class="row">
-        <div class="col=sm-12">
-          <img id=coverimage src= "imgs/coverimage.jpg"alt="Flowers in a hand">
-        </div>
-      </div>
-</div>
+  <div class="row">
+    <div class="col=sm-12">
+      <img id=coverimage src= "imgs/coverimage.jpg"alt="Flowers in a hand">
+    </div>
+  </div>
 
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="halfrow">
+        My favriote number:11
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="halfrow">
+        My favrotie song is: Ode to sleep
+
+        <a href=https://www.google.com/search?q=ode+to+sleep&rlz=1C1GCEA_enUS855US855&source=lnms&tbm=vid&sa=X&ved=0ahUKEwim1q668ITjAhWLG80KHbaQBC0Q_AUIECgB&biw=1920&bih=937> 21 pilots- ode to sleep</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2 offset-sm-1 color" id="color1">
+    </div>
+    <div class="col-sm-2 color" id="color2">
+    </div>
+    <div class="col-sm-2 color" id="color3">
+    </div>
+    <div class="col-sm-2 color" id="color4">
+    </div>
+    <div class="col-sm-2 color" id="color5">
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-as"id="pickcolor">
+    <button class="btn btn-default"
+    onclick=randomColor()>
+    Get Random Color
+</button>
+<br/><br/>
+<p id="colorGenerated"></p>
+</div>
+</div>
 
 
 
